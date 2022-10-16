@@ -6,6 +6,7 @@ import copy
 
 list_of_population_size = [10,100,1000,10000]
 MUTATION_RATE = 1.0 / 8
+# Selection rate would be to select 50% of the best chromosomes (0.5 TRUNCATION_RATE)
 TRUNCATION_RATE = 0.5
 NUMBER_GENERATION = 100
 # The total maximum solution space wouldbe 9! * 9 = 3265920
