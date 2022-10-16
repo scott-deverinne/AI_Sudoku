@@ -141,7 +141,8 @@ def create_subgrids(individual):
 
 ## Mutation and Crossover
 
-# Check if a position in the 2d array is a valid mutation / crossover choice given the grid specified.
+# Check position in the 2d array is a valid mutation / crossover choice
+# Single point crossover used on the same row of two different candidates swapped
 
 def crossover_ind(individual1,individual2,grid):
     row_cross = random.randint(0,8) # Random row position to crossover for indv1 and indv2.
