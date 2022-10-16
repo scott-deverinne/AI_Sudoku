@@ -1,17 +1,14 @@
-# Technical Coursework: Evolutionary Algorithm For Sudoku
-# Candidate name: Kow Hong Xuan
-
 import random
 import numpy as np
 import copy
 
-# Solution Representation and Problem Specification Parameters
+# Problem Parameters
 
 list_of_population_size = [10,100,1000,10000]
 MUTATION_RATE = 1.0 / 8
 TRUNCATION_RATE = 0.5
 NUMBER_GENERATION = 100
-
+# The total maximum solution space wouldbe 9! * 9 = 3265920
 grid1 = np.array([[3,0,0,0,0,5,0,4,7]
         ,[0,0,6,0,4,2,0,0,1]
         ,[0,0,0,0,0,7,8,9,0]
@@ -102,7 +99,7 @@ def create_ind(grid):
     return individual
 
 ## Fitness function
-
+# appropriate fitness function calculates the number of misalignments in the 9x9 grid
 def evaluate_ind(individual):
     return evaluate_column(individual) + evaluate_subgrids(individual)
 
