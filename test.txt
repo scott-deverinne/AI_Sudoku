@@ -1,0 +1,12 @@
+Experiment
+Average Fitness Value for Each Grid (5 runs)
+The population size 10000 gives the best results.
+Therefore the larger the population size, the better the results yield.
+The EA improves with increasing runs.
+From the results, grid 3 is the hardest to solve, and grid 2 the
+easiest caused by the amount of information each specific grid gives. With less information, 
+the harder for the algorithm to find an optimal solution.
+
+Future improvements:
+Change amount of generations ran, as well as the truncation rate of the chromosomes. 
+Use more complex crossovers or mutations, such as a N-crossover
